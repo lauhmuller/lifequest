@@ -45,7 +45,7 @@ export default function Evolution() {
     peso: l.weight_kg
   }))
 
-  const current = logs.at(-1)?.weight_kg
+  const current = logs[logs.length - 1]?.weight_kg
   const initial = logs[0]?.weight_kg
 
   return (
